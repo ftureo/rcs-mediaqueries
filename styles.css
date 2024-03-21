@@ -1,0 +1,92 @@
+/* Estilos base comunes a todos los tamaños de pantalla */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+        background-color: aquamarine;
+    }
+    .content {
+        padding: 10px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Estilos para tabletas */
+/* @media screen and (min-width: 481px) and (max-width: 1024px) {
+    header {
+        font-size: 24px;
+        padding: 20px;
+        background-color: blueviolet;
+        color: white
+    }
+    .content {
+        padding: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+} */
+
+/* Aplicando portrait y landscape */
+
+/* Estilos para tabletas en orientación landscape */
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+    header {
+        font-size: 24px;
+        padding: 20px;
+        background-color: blueviolet;
+        color: aliceblue;
+    }
+    .content {
+        padding: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Estilos para tabletas en orientación portrait */
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+    header {
+        font-size: 22px;
+        padding: 15px;
+        background-color: skyblue;
+        color: blue
+    }
+    .content {
+        padding: 15px;
+    }
+    .btn {
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+}
+
+/* Estilos para pantallas de escritorio/laptop */
+@media screen and (min-width: 1025px) {
+    header {
+        font-size: 32px;
+        padding: 30px;
+        background-color: darkorange;
+    }
+    .content {
+        padding: 30px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+        background-color: rgb(255, 184, 97);
+    }
+}
